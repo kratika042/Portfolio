@@ -1,0 +1,1 @@
+• Expertized in developing a responsive e-commerce website using JavaScript, NodeJS, MongoDB, HTML5, CSS, AJAX, Bootstrap and making RESTful API calls, meeting browser standards and could be served to desktop, tablets and mobile 

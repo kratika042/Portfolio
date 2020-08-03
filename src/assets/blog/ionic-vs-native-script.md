@@ -1,0 +1,1 @@
+• Built sensor module measuring temperature, humidity and pressure for an IoT device by making use of object-oriented concepts of Python and JAVA, alert email triggers for threshold breach. Continuous integration continuous deployment using Jenkins and Bitbucket. Redis as database, MQTT for messaging and CoAP for document transfer is applied 

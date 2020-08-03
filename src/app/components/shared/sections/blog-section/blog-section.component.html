@@ -1,0 +1,58 @@
+<section id="blog-section"
+    class="blog-section"
+    [ngClass]="{'all': !maxPosts && posts.length}">
+    <div class="container">
+        <div class="row">
+            <div *ngIf="title"
+                class="col s12 section-title">
+                <h2>{{ title }}</h2>
+            </div>
+
+            <div class="col s12 masonry pd-0">
+
+                <!-- Single Blog -->
+                <div *ngFor="let post of posts"
+                    class="col m6 s12 mgt-20">
+                    <div class="col s12 blog-wrapper w-block shadow-bg pd-0 wow fadeIn animated">
+                        
+                        <div class="col s12 blog-desc pd-30">
+                            <div class="blog-title">
+                                <a routerLink="{{ post.link }}">{{ post.title }}</a>
+                            </div>
+                            <div class="blog-data">
+                                
+                            </div>
+                            <div class="blog-content">
+                                <p [innerHTML]="post.text"></p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+                <!-- Single Blog -->
+
+            </div>
+
+            <div *ngIf="pages.length > maxPosts"
+                class="col s12">
+                <div class="col s12 pagination mgt-60">
+                    <a class="prev page-numbers btn-circle waves-effect waves-light"
+                        routerLink="{{ paginationRoute }}/1"><span class="fa fa-angle-double-left"></span></a>
+                    <ng-container *ngFor="let page of pages">
+                        <span *ngIf="page == currentPage"
+                            aria-current="page"
+                            class="page-numbers current btn-circle waves-effect waves-light">{{ page }}</span>
+                        <a *ngIf="page != currentPage"
+                            class="page-numbers btn-circle waves-effect waves-light"
+                            routerLink="{{ paginationRoute + page }}">{{ page }}</a>
+                    </ng-container>
+                    <a class="next page-numbers btn-circle waves-effect waves-light"
+                        routerLink="{{ paginationRoute + pages.length }}"><span
+                            class="fa fa-angle-double-right"></span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<app-error-section *ngIf="!posts.length && !maxPosts"
+    [message]="'No posts available'"></app-error-section>
