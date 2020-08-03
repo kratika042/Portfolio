@@ -24,7 +24,7 @@ export class BlogService {
             title: 'Home Automation',
             // date: '2020/06/06',
             author: this.authors['Kratika'],
-            // image: './assets/img/posts/ionic-vs-native-script.png',
+            image: './assets/img/posts/ionic-vs-native-script.png',
             content: './assets/blog/ionic-vs-native-script.md',
             tags: [
                 'Comparison',
@@ -39,7 +39,7 @@ export class BlogService {
             title: 'Daycare',
             // date: '2019/11/30',
             author: this.authors['Kratika'],
-            // image: './assets/img/posts/ant-design.png',
+            image: './assets/img/posts/ant-design.png',
             content: './assets/blog/ant-design.md',
             tags: [
                 'Design',
@@ -52,7 +52,7 @@ export class BlogService {
             title: 'E-Commerce',
             // date: '2019/11/29',
             author: this.authors['Kratika'],
-            // image: './assets/img/posts/R-V-A.jpg',
+            image: './assets/img/posts/R-V-A.jpg',
             content: './assets/blog/react-vue-or-angular.md',
             tags: [
                 'Comparison',
@@ -67,7 +67,7 @@ export class BlogService {
             title: 'Private Network',
             // date: '2019/10/25',
             author: this.authors['Kratika'],
-            // image: './assets/img/posts/javascript.png',
+            image: './assets/img/posts/javascript.png',
             content: './assets/blog/not-not-operator-in-javascript.md',
             tags: [
                 'Javascript',
@@ -78,7 +78,7 @@ export class BlogService {
             title: 'Corporate Organization',
             // date: '2019/09/28',
             author: this.authors['Kratika'],
-            // image: './assets/img/posts/design-patterns.jpeg',
+            image: './assets/img/posts/design-patterns.jpeg',
             content: './assets/blog/some-useful-design-patterns.md',
             tags: [
                 'Design patterns',

@@ -8,7 +8,7 @@ export interface Post {
     text?: string;
     // date: string;
     author: Author;
-    // image: string;
+    image: string;
     content: string;
     tags?: string[];
     disqusIdentifier?: string;
