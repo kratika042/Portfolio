@@ -8,8 +8,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "build:github": "ng build --prod --base-href \"/portfolio/\"",
-    "deploy:github": "ngh --dir=dist/portfolio",
+    
     "postinstall": "ng build --prod"
   },
   "engines": {
